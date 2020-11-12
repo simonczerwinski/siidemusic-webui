@@ -4,6 +4,7 @@
 
 ![alt text](https://github.com/simonczerwinski/siidemusic-webui/blob/master/webui/public/images/siidemusic-screen.jpg)
 
+# Startup
 
 In the project directory, you first need to run:
 
