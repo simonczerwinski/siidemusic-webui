@@ -26,6 +26,6 @@ export default class ButtonGetMusic extends Component {
 
   changeText() {
     const { btnText } = this.state;
-    return btnText === true ? "Give me another one" : "Get me a song to mix";
+    return btnText === true ? "Give me another one" : "Get me a song";
   }
 }
