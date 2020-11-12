@@ -1,0 +1,33 @@
+@import "../../content/styles/colors.scss";
+.awssld {
+  height: 100vh;
+}
+.sliderhero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+
+  .wrapper {
+    top: 30%;
+    width: 100%;
+    position: absolute;
+    .content {
+      max-width: 600px;
+      width: 100%;
+      padding: 15px;
+    }
+  }
+}
+.awssld__bullets {
+  display: none;
+}
+.overlay-slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 99;
+}

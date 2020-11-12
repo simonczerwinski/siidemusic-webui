@@ -1,0 +1,28 @@
+@import "../../content/styles/colors.scss";
+
+.btn {
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn-primary {
+  background-color: $dmPurple;
+  border-color: #ffffff;
+  border: 4px solid;
+  font-family: "Nunito-Bold";
+  padding: 15px;
+  border-radius: 1.25rem;
+  &:hover {
+    background-color: $dmLightPurple;
+    border-color: #ffffff;
+  }
+  &:focus {
+    background-color: $dmLightPurple;
+    border-color: #ffffff;
+  }
+}

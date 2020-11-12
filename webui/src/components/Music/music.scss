@@ -1,0 +1,114 @@
+@import "../../content/styles/colors.scss";
+@import "../../content/styles/fonts.scss";
+.header-top {
+  position: absolute;
+  top: 35%;
+  z-index: 100;
+  width: 100%;
+  h1 {
+    margin-bottom: 40px;
+    color: white;
+  }
+  h2 {
+    color: white;
+    margin-bottom: 50px;
+  }
+}
+
+.music-top {
+  h3 {
+    padding: 40px 0;
+  }
+}
+
+/* Tabs style */
+.nav {
+  &.nav-tabs {
+    border-color: transparent;
+    background-color: $dmPurple;
+    .nav-link {
+      padding: 20px;
+      font-size: 1.25rem;
+      color: white;
+      border-radius: 0;
+      &.active {
+        color: $dmBlack;
+        &:hover {
+          opacity: 0.8;
+          background-color: white;
+        }
+      }
+      &:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        opacity: 0.8;
+        background-color: $dmBlackFade;
+        border-color: transparent;
+      }
+    }
+  }
+}
+.tab-content {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  thead {
+    tr {
+      th {
+        padding: 10px 0;
+        font-size: 2.4rem;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  .header-top {
+    top: 30%;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: white;
+      margin-bottom: 30px;
+    }
+  }
+  .music-top {
+    padding-bottom: 60px;
+    margin-top: -240px;
+    margin-bottom: 40px;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px black;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    &.nav-tabs {
+      .nav-link {
+        border: 3px solid;
+        width: 100%;
+        &.active {
+          color: $dmBlack;
+          &:hover {
+            opacity: 0.8;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+  .music-top {
+    margin-top: -50px;
+  }
+}

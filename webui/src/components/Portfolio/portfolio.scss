@@ -1,0 +1,44 @@
+@import "../../content/styles/colors.scss";
+
+.portfolio-item {
+  // padding-bottom: 30px;
+  padding: 0;
+  float: left;
+  text-align: center;
+  .portfolio-bg {
+    overflow: hidden;
+    max-height: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      padding: 0;
+      height: 100%;
+    }
+    .portfolio-caption {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.45);
+      padding: 0 15px 0 15px;
+      span {
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        top: 40%;
+        position: relative;
+        z-index: 500;
+        padding: 15px 8px;
+        color: #fff;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &:hover {
+    .portfolio-bg img {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+}
