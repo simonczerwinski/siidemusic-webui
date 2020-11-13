@@ -134,7 +134,7 @@ img {
       .text-content {
         padding: 2.5rem 15% 2.5rem 15%;
         color: white;
-        .info {
+        &.info {
           h2 {
             padding: 15px 0;
           }
@@ -142,7 +142,7 @@ img {
             padding: 15px 0;
           }
           a {
-            padding: 15px 0;
+            margin: 15px 0;
           }
         }
       }
