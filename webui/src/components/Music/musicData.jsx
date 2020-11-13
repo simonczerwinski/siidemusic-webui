@@ -61,14 +61,14 @@ export default class MusicData extends Component {
     const musicItem = this.state.musicData.map((item, index) => {
       return (
         <React.Fragment key={index}>
-          <div ref={this.cRef} className="col-lg-6 c6 cell">
+          <div ref={this.cRef} className="col-lg-6 cell c6">
             <div className="wrapper">
               <div className="image-content">
                 <img src={item.strDrinkThumb} alt={item.strDrink} />
               </div>
             </div>
           </div>
-          <div className="col-lg-6 c6 cell">
+          <div className="col-lg-6 cell c6">
             <div className="wrapper">
               <div className="text-content">
                 <div className="music-top">
@@ -302,14 +302,13 @@ export default class MusicData extends Component {
 
                   <Tab eventKey="video" title="Video">
                     <Zoom>
-                      <div>
                         {/* {item.strVideo ? (
-                          <ReactPlayer url={item.strVideo} />
+                          <ReactPlayer width="100%" url={item.strVideo} />
                         ) : (
                           <p>There are no videos for this album!</p>
                         )} */}
-                        <ReactPlayer url="https://www.youtube.com/watch?v=lufjE4orQxc&ab_channel=Siide" />
-                      </div>
+                        <ReactPlayer width="100%" url="https://www.youtube.com/watch?v=lufjE4orQxc&ab_channel=Siide" />
+                    
                     </Zoom>
                   </Tab>
                 </Tabs>

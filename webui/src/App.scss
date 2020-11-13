@@ -156,9 +156,8 @@ img {
         }
       }
     }
-  }
-  &.c6 {
-    .cell {
+
+    &.c6 {
       .wrapper {
         .text-content {
           max-height: 100%;
@@ -198,6 +197,21 @@ img {
             vertical-align: middle;
             max-width: 100%;
             width: 100%;
+          }
+        }
+      }
+
+      &.c6 {
+        .wrapper {
+          .text-content {
+            max-height: 100%;
+            min-height: 700px;
+            height: 100%;
+          }
+
+          .image-content {
+            max-height: auto;
+            height: 100%;
           }
         }
       }
