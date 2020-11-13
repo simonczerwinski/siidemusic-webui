@@ -8,7 +8,7 @@ export const PortfolioData = [
   },
   {
     title: "My Music List",
-    path: "/drinkmixlist",
+    path: "/musiclist",
     bgImage: "/images/portfolio/djset.jpg",
   },
   {
