@@ -18,14 +18,14 @@ export default class ButtonGetMusic extends Component {
           className="btn btn-primary btn-lg"
           type="button"
         >
-          {this.changeText()}
+          {this.updateBtnText()}
         </button>
       </React.Fragment>
     );
   }
 
-  changeText() {
+  updateBtnText() {
     const { btnText } = this.state;
-    return btnText === true ? "Give me another one" : "Get me a song";
+    return btnText === true ? "Give me another song" : "Get me a song";
   }
 }
